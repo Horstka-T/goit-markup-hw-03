@@ -18,20 +18,20 @@ body {
 }
 
 .feature-list img {
-    display: block, max-width: 100%, height: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
     width: 1230px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: >0 auto;
+    margin-bottom: 0;
 }
 
 .list {
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 .link {
@@ -139,18 +139,13 @@ body {
    background: tomato;
    padding-top: 50px;
    padding-bottom: 94px;
-
-}
-
-.section .no-padding {
-    padding-top: 0;
-    padding-bottom: 0;
 }
 
 .section-title {
     margin-top: 0;
     margin-bottom: 50px;
     padding-top: 94px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
