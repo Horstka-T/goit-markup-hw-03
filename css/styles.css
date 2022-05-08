@@ -2,12 +2,14 @@
     --primary-text-color: #757575;
     --secondary-color: #212121;
     --accent-color: #2196F3;
-    --team-background: #F5F4FA;
+    --gray-background: #F5F4FA;
     --main-color: #FFFFFF;
 
     --section-background: #E5E5E5;
     --footer-background: #2F303A;
     --button-hero-color: #188ce8;
+
+    --border-color: #ECECEC;
 
 }
 
@@ -17,7 +19,30 @@ body {
     font-family: 'Roboto', sans-serif; 
 }
 
-.feature-list img {
+.list {
+    margin: 0;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+
+.image {
     display: block;
     max-width: 100%;
     height: auto;
@@ -27,25 +52,27 @@ body {
     width: 1230px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-bottom: 0;
+    margin: 0 auto;
 }
-
-.list {
-    list-style: none;
-}
-
-.link {
-    text-decoration: none;
-    color: inherit;
-}
-
 
 /* Header */
+
+.main-nav {
+display: flex;
+align-items: center;
+}
+
 .header {
-    background: var(--main-color)
+    background: var(--main-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .site-nav {
+    display: flex;
+    margin-left: 50px;
+    justify-content: center;
+    
+
     font-family: inherit;
     font-weight: 500;
     font-size: 14px;
@@ -53,6 +80,20 @@ body {
     letter-spacing: 0.02em;
     color: var(--secondary-color)
     }
+
+.site-nav .item {
+    margin-right: 50px;
+}
+
+.site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.site-nav .item:last-child {
+    margin-right: 0 ;
+}
     
 .site-nav:hover,
 .site-nav:focus,
@@ -65,19 +106,29 @@ body {
     }
     
 .header-contacts {
+    display: flex;
+    margin-left: auto;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color)
     }
+
+.header-contacts .item+ .item {
+    margin-left: 50px;
+}
     
+
 .header-contacts:hover,
 .header-contacts:focus {
     color: var(--accent-color);
     }
 
 /* Logo */ 
+
+
 .logo-left {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -95,6 +146,12 @@ body {
     letter-spacing: 0.03em;
     color: var(--secondary-color)
 }
+
+/*.logo-down {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+*/
 
 .logo-right-down {
     font-family: 'Raleway', sans-serif;
@@ -118,8 +175,8 @@ body {
 }
 
 .hero-title {
-    margin-top: 0;
-    margin-bottom: 40px;
+    padding-top: 0;
+    padding-bottom: 40px;
     padding-top: 200px;
 
     color: var(--main-color);
@@ -135,16 +192,20 @@ body {
 /* Преимущества. Чем мы занимаемся */
 
 .section {
-   /* background: var(--main-color); */
-   background: tomato;
-   padding-top: 50px;
-   padding-bottom: 94px;
+    
+/* background: var(--main-color); */
+    background: tomato;
+    padding-top: 50px;
+    padding-right: 15px;
+    padding-bottom: 94px;
+    padding-left: 15px;
+    margin-bottom: 0;
+  
 }
 
 .section-title {
-    margin-top: 0;
-    margin-bottom: 50px;
-    padding-top: 94px;
+    padding-bottom: 94px;
+    
 
     font-weight: 700;
     font-size: 36px;
@@ -155,7 +216,10 @@ body {
 }
 
 .advantage {
-    margin-bottom: 10px;
+    margin: 0;
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
 
     font-weight: 700;
     font-size: 14px;
@@ -165,25 +229,77 @@ body {
     color: var(--secondary-color);
 }
 
+.advantage-title {
+    padding: 10px;
+}
+
 .adv-description {
+    display: flex;
+    text-align: left;
+    margin-right: 30px;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    text-transform: none;
     color: var(--primary-text-color);
 }
+
+.activity {
+   display: flex;
+   flex-wrap: nowrap;
+   padding-left: 0;
+   padding-right: 0;      
+}
+
+.act-item {
+    /* width: calc ((100% - 60px)/3); */
+    padding-right: 30px;
+}
+
+   
+.act-item:nth-child(3n) {
+    margin-right: 0;
+}
+
 
 /* Наша команда */
 
 .team {
-    background: var(--team-background);
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 94px;
     padding-bottom: 94px;
+    
+    background: var(--gray-background);
+}
+
+.t-image {
+    width: calc ((100% - 90px)/4);
+    margin-right: 30px;
+    
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.t-image:nth-child(4n) {
+    margin-right: 0;
+}
+
+.tm-description {
+    padding: 30px 97px;
+
 }
 
 .team-member {
-    margin-top: 0;
-    margin-bottom: 10px;
+    padding-top: 0;
+    padding-bottom: 10px;
 
     color: var(--secondary-color);
     font-weight: 500;
@@ -214,7 +330,7 @@ body {
 
     font-family: inherit;
     color: var(--secondary-color);
-    background: var(--team-background);
+    background: var(--gray-background);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -255,17 +371,37 @@ body {
 
 /* Портфолио */
 
+.site-nav-button {
+    padding-bottom: 56px; 
 
+    display: flex;
+    margin-left: 50px;
+    justify-content: center;
+    
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color)
+}
 .project {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
     background: var(--main-color);
-    margin-top: 0;
-    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
+.project-info {
+    padding: 20px 24px;
 }
 
 .project-name {
-    margin-top: 0;
-    margin-bottom: 4px;
+    padding-top: 0;
+    padding-bottom: 4px;
 
     font-weight: 700;
     font-size: 18px;
@@ -288,8 +424,15 @@ body {
     background: var(--footer-background)
 }
 
+.footer-card {
+    display: flex;
+    flex-direction: column;
+}
+
 .address {
     font-style: normal;
+    text-align: left;
+
 }
 
 .contacts {

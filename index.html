@@ -17,46 +17,46 @@
 <body>
     <header class="header">
             <div class="container">
-            <nav>
+                <nav class="main-nav">
                 <a href="index.html" lang="en" class="logo-left link">Web<span class="logo-right link">Studio</span></a>
                 <ul class="site-nav list">
-                    <li><a href="./index.html" class="site-nav link">Студия</a></li>
-                    <li><a href="" class="site-nav link current">Портфолио</a></li>
-                    <li><a href="" class="site-nav link">Контакты</a></li>
+                        <li class="item"><a href="" class="site-nav link current">Студия</a></li>
+                        <li class="item"><a href="./portfolio.html" class="site-nav link">Портфолио</a></li>
+                        <li class="item"><a href="" class="site-nav link">Контакты</a></li>
                 </ul>
-            </nav>
-            <ul class="header-contacts list">
-                <li><a href="mailto:info@devstudio.com" class="header-contacts link">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="header-contacts link">+38 096 111 11 11</a></li>
-            </ul>
+                    <ul class="header-contacts list">
+                        <li class="item"><a href="mailto:info@devstudio.com" class="header-contacts link">info@devstudio.com</a></li>
+                        <li class="item"><a href="tel:+380961111111" class="header-contacts link">+38 096 111 11 11</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
     <main>
         <section class="hero">
             <div class="container">
-                <h1 hidden>Hero</h1>
+                <h1 class="visually-hidden">Hero</h1>
                 <p class="hero-title">Эффективные решения для вашего бизнеса</p>
                 <button type="button" class="button-hero">Заказать услугу</button>
             </div>
         </section>
         <section class="section">
             <div class="container">
-                <h1 hidden>Преимущества</h1>
-                <ul class="advantages list">
+                <h1 class="visually-hidden">Преимущества</h1>
+                <ul class="advantage list">
                     <li>
-                        <h2 class="advantage">Внимание к деталям</h2>
+                        <h2 class="advantage-title">Внимание к деталям</h2>
                         <p class="adv-description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
                     <li>
-                        <h2 class="advantage">Пунктуальность</h2>
+                        <h2 class="advantage-title">Пунктуальность</h2>
                         <p class="adv-description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
                     <li>
-                        <h2 class="advantage">Планирование</h2>
+                        <h2 class="advantage-title">Планирование</h2>
                         <p class="adv-description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
                     <li>
-                        <h2 class="advantage">Современные технологии</h2>
+                        <h2 class="advantage-title">Современные технологии</h2>
                         <p class="adv-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
                 </ul>
@@ -65,19 +65,22 @@
         <section class="section">
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
-                <ul class="project list">
+                <ul class="project list activity">
                     <li>
-                        <img src="./img/hw1.jpg" alt="Верстка сайтов"
+                        <img class="image act-item"
+                        src="./img/hw1.jpg" alt="Верстка сайтов"
                         width="371"
                         height="294">
                     </li>
                     <li>
-                        <img src="./img/hw2.jpg" alt="Мобильные приложения" 
+                        <img class="image act-item" 
+                        src="./img/hw2.jpg" alt="Мобильные приложения" 
                         width="371"
                         height="294">
                     </li>
                     <li>
-                        <img src="./img/hw3.jpg" alt="WEB дизайн" 
+                        <img class="image act-item"
+                        src="./img/hw3.jpg" alt="WEB дизайн" 
                         width="371"
                         height="294">
                     </li>
@@ -87,34 +90,46 @@
         <section class="team">
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
-                <ul class="project list">
-                    <li>
-                        <img src="./img/hw4.jpg" alt="Фото Игоря Демьяненко" 
+                <ul class="project team list">
+                    <li class="t-image">
+                        <img class="image"
+                        src="./img/hw4.jpg" alt="Фото Игоря Демьяненко" 
                         width="270"
                         height="260">
+                        <div class="tm-description">
                         <h2 class="team-member">Игорь Демьяненко</h2>
                         <p class="project-type">Product Designer</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="./img/hw5.jpg" alt="Фото Ольги Репиной" 
+                    <li class="t-image">
+                        <img class="image"
+                        src="./img/hw5.jpg" alt="Фото Ольги Репиной" 
                         width="270"
                         height="260">
+                        <div class="tm-description">
                         <h2 class="team-member">Ольга Репина</h2>
                         <p class="project-type">Frontend Developer</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="./img/hw6.jpg" alt="Фото Николая Тарасова" 
+                    <li class="t-image">
+                        <img class="image"
+                        src="./img/hw6.jpg" alt="Фото Николая Тарасова" 
                         width="270"
                         height="260">
+                        <div class="tm-description">
                         <h2 class="team-member">Николай Тарасов</h2>
                         <p class="project-type">Marketing</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="./img/hw7.jpg" alt="Фото Михаила Ермакова" 
+                    <li class="t-image">
+                        <img class="image"
+                        src="./img/hw7.jpg" alt="Фото Михаила Ермакова" 
                         width="270"
                         height="260">
+                        <div class="tm-description">
                         <h2 class="team-member">Михаил Ермаков</h2>
                         <p class="project-type">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>
