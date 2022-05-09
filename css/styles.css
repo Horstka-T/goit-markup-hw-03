@@ -80,6 +80,7 @@ img {
 .main-nav {
 display: flex;
 align-items: center;
+
 }
 
 .logo-left {
@@ -149,6 +150,7 @@ align-items: center;
 .header-contacts {
     display: flex;
     margin-left: auto;
+    
 
     font-weight: 500;
     font-size: 14px;
@@ -157,10 +159,14 @@ align-items: center;
     color: var(--primary-text-color)
     }
 
-.item {
+.header-contacts-item {
     margin-right: 50px;
+    padding-left: auto;
 }
-    
+
+.header-contacts-item:last-child {
+      margin-right: 0;
+  }  
 
 .header-contacts:hover,
 .header-contacts:focus {
@@ -259,9 +265,9 @@ align-items: center;
     display: flex;
     flex-wrap: nowrap;
     padding-top: 94px;
-    padding-bottom: 94px;
     padding-left: 0;
     padding-right: 0;
+      
     
     font-weight: 700;
     font-size: 14px;
@@ -282,9 +288,7 @@ align-items: center;
     width: 270px;
 }
 
-.advantage-item:last-child {
-    margin-right: 0;
-}
+
 
 .adv-description {
     margin-right: 30px;
@@ -325,7 +329,6 @@ align-items: center;
 }
 
 .project-team {
-
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
