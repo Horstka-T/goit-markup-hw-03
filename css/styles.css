@@ -540,6 +540,8 @@ align-items: center;
 .address {
     font-style: normal;
     text-align: left;
+
+    margin-top: 20px;
 }
 
 .contacts {
