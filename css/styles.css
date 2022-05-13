@@ -115,7 +115,8 @@ align-items: center;
 
 
 .site-nav-item { 
-    
+    margin-right: 50px;
+
     font-family: inherit;
     font-weight: 500;
     font-size: 14px;
@@ -125,8 +126,8 @@ align-items: center;
     }
 
 .site-nav-item:last-child {   
-    margin-right: 0 auto;
-    }
+    margin-right: 0;
+}
 
 .site-nav .link {
     display: block;
@@ -147,19 +148,11 @@ align-items: center;
 .header-container {
     display: flex;
     margin-right: 50px;
-    padding-left: auto;
-    align-items: center;
+    
 }
 
-.header-container:last-child {
-    margin-right: 0;
-}
-    
+   
 .header-contacts {
-    display: flex;
-    margin-left: auto;
-    
-
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -172,6 +165,9 @@ align-items: center;
     color: var(--accent-color);
     }
 
+.header-contacts-item {
+    margin-left: auto;
+}
 /* Logo */ 
 
 
@@ -427,7 +423,7 @@ align-items: center;
 
 .site-nav-button {
     display: flex;
-    margin-left: 50px;
+    margin-bottom: 50px;
     justify-content: center;
     
 
