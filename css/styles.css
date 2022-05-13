@@ -78,12 +78,6 @@ img {
 
 /* Header */
 
-/* .main-nav {
-display: flex;
-align-items: center;
-
-} */
-
 .header {
     background: var(--main-color);
     border-bottom: 1px solid var(--border-color);
@@ -147,12 +141,15 @@ align-items: center;
 
 .header-container {
     display: flex;
-    margin-right: 50px;
+    align-items: center;
     
 }
 
    
 .header-contacts {
+    display: flex;
+    margin-left: auto;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -167,6 +164,10 @@ align-items: center;
 
 .header-contacts-item {
     margin-left: auto;
+}
+
+.header-contacts .header-contacts-item + .site-nav-item {
+    margin-left: 50px;
 }
 /* Logo */ 
 
