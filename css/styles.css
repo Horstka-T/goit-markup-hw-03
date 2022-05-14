@@ -86,6 +86,7 @@ img {
 .site-nav {
     display: flex;
     align-items: center;
+    margin-left: 93px;
 }
 
 .project-team {
@@ -109,7 +110,8 @@ img {
 
 
 .site-nav-item { 
-    margin-right: 50px;
+    /* margin-right: 50px; */
+    display: inline-block;
 
     font-family: inherit;
     font-weight: 500;
@@ -119,8 +121,8 @@ img {
     color: var(--secondary-color)
     }
 
-.site-nav-item:last-child {   
-    margin-right: 0;
+.site-nav .site-nav-item:not(:last-child) {   
+    margin-right: 50px;
 }
 
 .site-nav .link {
@@ -141,8 +143,8 @@ img {
 
 .header-container {
     display: flex;
-    align-items: center;
-    
+    align-items:center;
+   
 }
 
    
@@ -163,12 +165,14 @@ img {
     }
 
 .header-contacts-item {
-    margin-left: auto;
+    margin-right: 50px;
+    display: inline-block;
 }
 
-.header-contacts .header-contacts-item + .site-nav-item {
-    margin-left: 50px;
+.header-contacts-item:last-child {
+    margin-right: 0;
 }
+
 /* Logo */ 
 
 
