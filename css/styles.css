@@ -180,8 +180,8 @@ img {
 
 
 .logo-left {
-    padding:24px 0;
-        
+    padding: 24px 0;
+
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -190,6 +190,14 @@ img {
     color: var(--accent-color)
 }
 
+.logo-left-footer {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color)
+}
 
 .logo-right {
     font-family: 'Raleway', sans-serif;
@@ -304,6 +312,10 @@ img {
 }
 
 /*Чем мы занимаемся*/
+
+.act-section {
+    padding-top: 0;
+}
 
 .activity {
    display: flex;
